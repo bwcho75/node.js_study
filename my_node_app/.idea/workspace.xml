@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a05c2134-ac83-4029-884f-050097c776a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello.js" />
       <change type="DELETED" beforePath="C:\dev\ws\nodejs_study\read_file\read_file.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello.js" afterPath="$PROJECT_DIR$/hello.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my_node_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +30,7 @@
       <file leaf-file-name="hello.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="56" selection-start="240" selection-end="240" vertical-scroll-proportion="0.10326087" vertical-offset="0" max-vertical-offset="920">
+            <state line="6" column="17" selection-start="218" selection-end="218" vertical-scroll-proportion="0.12391304" vertical-offset="0" max-vertical-offset="920">
               <folding />
             </state>
           </provider>
@@ -228,7 +229,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="56" selection-start="240" selection-end="240" vertical-scroll-proportion="0.10326087" vertical-offset="0" max-vertical-offset="920">
+        <state line="6" column="17" selection-start="218" selection-end="218" vertical-scroll-proportion="0.12391304" vertical-offset="0" max-vertical-offset="920">
           <folding />
         </state>
       </provider>
