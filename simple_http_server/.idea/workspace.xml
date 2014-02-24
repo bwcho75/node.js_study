@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a05c2134-ac83-4029-884f-050097c776a4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/simple_http_server.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cluster.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
       <change type="DELETED" beforePath="C:\dev\ws\nodejs_study\my_node_app\hello.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/../simple_http_server/.idea/scopes/scope_settings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../simple_http_server/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="C:\dev\ws\nodejs_study\my_node_app\.idea\.name" afterPath="$PROJECT_DIR$/../simple_http_server/.idea/.name" />
-      <change type="MOVED" beforePath="C:\dev\ws\nodejs_study\my_node_app\.idea\encodings.xml" afterPath="$PROJECT_DIR$/../simple_http_server/.idea/encodings.xml" />
-      <change type="MOVED" beforePath="C:\dev\ws\nodejs_study\my_node_app\.idea\misc.xml" afterPath="$PROJECT_DIR$/../simple_http_server/.idea/misc.xml" />
-      <change type="MOVED" beforePath="C:\dev\ws\nodejs_study\my_node_app\.idea\modules.xml" afterPath="$PROJECT_DIR$/../simple_http_server/.idea/modules.xml" />
-      <change type="MOVED" beforePath="C:\dev\ws\nodejs_study\my_node_app\.idea\my_node_app.iml" afterPath="$PROJECT_DIR$/../simple_http_server/.idea/simple_http_server.iml" />
-      <change type="MOVED" beforePath="C:\dev\ws\nodejs_study\my_node_app\.idea\vcs.xml" afterPath="$PROJECT_DIR$/../simple_http_server/.idea/vcs.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../my_node_app/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="C:\dev\ws\nodejs_study\my_node_app\.idea\.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MOVED" beforePath="C:\dev\ws\nodejs_study\my_node_app\.idea\modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MOVED" beforePath="C:\dev\ws\nodejs_study\my_node_app\.idea\vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple_http.js" afterPath="$PROJECT_DIR$/simple_http.js" />
     </list>
     <ignored path="my_node_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,9 +36,18 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="simple_http.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../simple_http_server/simple_http.js">
+        <entry file="file://$PROJECT_DIR$/simple_http.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.09375" vertical-offset="0" max-vertical-offset="608">
+            <state line="22" column="38" selection-start="565" selection-end="565" vertical-scroll-proportion="0.73204905" vertical-offset="0" max-vertical-offset="589">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cluster.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cluster.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="38" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
               <folding />
             </state>
           </provider>
@@ -56,16 +67,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/hello.js" />
-        <option value="$PROJECT_DIR$/../simple_http_server/hello.js" />
-        <option value="$PROJECT_DIR$/../simple_http_server/simple_http.js" />
+        <option value="$PROJECT_DIR$/cluster.js" />
+        <option value="$PROJECT_DIR$/simple_http.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="839" />
+    <option name="y" value="28" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -74,7 +85,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -120,10 +131,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../simple_http_server/simple_http.js" />
-    <property name="SearchEverywhereHistory" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/simple_http.js" />
   </component>
-  <component name="RunManager" selected="Node.js.default_nodejs">
+  <component name="RunManager" selected="Node.js.single">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -160,14 +170,21 @@
       <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
-    <configuration default="false" name="default_nodejs" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="$PROJECT_DIR$/../../../was/nodejs/node" path-to-js-file="simple_http.js" working-dir="$PROJECT_DIR$/../simple_http_server">
+    <configuration default="false" name="cluster" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="$PROJECT_DIR$/../../../was/nodejs/node" path-to-js-file="cluster.js" working-dir="$PROJECT_DIR$">
       <browser start="false" url="" with-js-debugger="false" />
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.default_nodejs" />
+    <configuration default="false" name="single" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="$PROJECT_DIR$/../../../was/nodejs/node" path-to-js-file="simple_http.js" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.cluster" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.single" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -198,39 +215,31 @@
       <created>1393247230762</created>
       <updated>1393247230762</updated>
     </task>
-    <task id="LOCAL-00002" summary="change project to http server project">
-      <created>1393247591175</created>
-      <updated>1393247591175</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add simple http request handler">
-      <created>1393249955209</created>
-      <updated>1393249955209</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="839" y="28" width="1400" height="1000" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -246,17 +255,29 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="add mynodeapp&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;new file:   my_node_app/.idea/.name&#10;#&#9;new file:   my_node_app/.idea/encodings.xml&#10;#&#9;new file:   my_node_app/.idea/misc.xml&#10;#&#9;new file:   my_node_app/.idea/modules.xml&#10;#&#9;new file:   my_node_app/.idea/my_node_app.iml&#10;#&#9;new file:   my_node_app/.idea/scopes/scope_settings.xml&#10;#&#9;new file:   my_node_app/.idea/vcs.xml&#10;#&#9;new file:   my_node_app/.idea/workspace.xml&#10;#&#9;new file:   my_node_app/hello.js&#10;#&#10;# Changes not staged for commit:&#10;#   (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)&#10;#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)&#10;#&#10;#&#9;deleted:    read_file/read_file.js&#10;#&#10;# Untracked files:&#10;#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)&#10;#&#10;#&#9;hello_nodejs/.idea/&#10;#&#9;util_module/&#10;git test" />
-    <MESSAGE value="change project to http server project" />
-    <MESSAGE value="add simple http request handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="add simple http request handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mynodeapp&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;new file:   my_node_app/.idea/.name&#10;#&#9;new file:   my_node_app/.idea/encodings.xml&#10;#&#9;new file:   my_node_app/.idea/misc.xml&#10;#&#9;new file:   my_node_app/.idea/modules.xml&#10;#&#9;new file:   my_node_app/.idea/my_node_app.iml&#10;#&#9;new file:   my_node_app/.idea/scopes/scope_settings.xml&#10;#&#9;new file:   my_node_app/.idea/vcs.xml&#10;#&#9;new file:   my_node_app/.idea/workspace.xml&#10;#&#9;new file:   my_node_app/hello.js&#10;#&#10;# Changes not staged for commit:&#10;#   (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)&#10;#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)&#10;#&#10;#&#9;deleted:    read_file/read_file.js&#10;#&#10;# Untracked files:&#10;#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)&#10;#&#10;#&#9;hello_nodejs/.idea/&#10;#&#9;util_module/&#10;git test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../simple_http_server/simple_http.js">
+    <entry file="file://$PROJECT_DIR$/simple_http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.09375" vertical-offset="0" max-vertical-offset="608">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="38" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="38" selection-start="565" selection-end="565" vertical-scroll-proportion="0.73204905" vertical-offset="0" max-vertical-offset="589">
           <folding />
         </state>
       </provider>
