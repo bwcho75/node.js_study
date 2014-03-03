@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://localhost');
+        socket.on('news', function (data) {
+            console.log('LOG :'+data);
+            socket.emit('msg', { my: 'data' });
+        });
+
+        function sendmessage(){
+            //alert(document.getElementById("message").value);
+            socket.emit('msg',{my:document.getElementById("message").value});
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="message" size="20" name="message">
+    <button name="send" onclick="sendmessage();">Send</button>
+</body>
+</html>
