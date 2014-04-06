@@ -12,7 +12,7 @@ var path = require('path');
 var mongoose = require('mongoose');
 
 var MemoSchema= mongoose.Schema({username:String,memo:String});
-var Memo = mongoose.model('Memo',MemoSchema);
+var Memo = mongoose.model('MemoModel',MemoSchema); // MemoModel : mongodb collection name
 
 var app = express();
 
@@ -20,7 +20,6 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
@@ -36,12 +35,27 @@ app.post('/insert', function(req,res,err){
     res.send('success');
 });
 
-app.get('/query', function(req,res,err){
-    var silence = new Kitten({name:'Silence'});
-    silence.save(function(err,silence){
-        if(err) return console.error(err);
+app.get('/users/:username', function(req,res,err){
+    var memos = new Memo();
+    Memo.findOne({'username':req.params.username},function(err,memo){
+        if(err){
+            console.err(err);
+            throw err;
+        }
+        console.log(memo);
+        res.send(200,memo);
     });
-    response.send('success');
+});
+app.get('/users', function(req,res,err){
+    var memos = new Memo();
+    Memo.find().select('username').exec(function(err,memos){
+        if(err){
+            console.err(err);
+            throw err;
+        }
+        console.log(memos);
+        res.send(memos);
+    });
 });
 
 mongoose.connect('mongodb://localhost/terrydb',function(err){
