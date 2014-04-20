@@ -132,8 +132,10 @@ io.sockets.on('connection',function(socket){
             if (data.to == 'ALL') socket.broadcast.to(room).emit('broadcast_msg', data); // 자신을 제외하고 다른 클라이언트에게 보냄
             else {
                 // 귓속말
-                socket_id = socket_ids[data.to];
+                socket_id = rooms[room].socket_ids[data.to];
                 if (socket_id != undefined) {
+
+                    data.msg = '귓속말 :'+data.msg;
                     io.sockets.socket(socket_id).emit('broadcast_msg', data);
                 }// if
             }
