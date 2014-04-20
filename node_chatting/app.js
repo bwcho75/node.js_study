@@ -35,8 +35,7 @@ app.get('/:room',function(req,res){
     res.render('index',{room:req.params.room});
 });
 
-function joinroom(socket,room,nickname){
-}
+
 
 io.sockets.on('connection',function(socket){
 
@@ -111,9 +110,11 @@ io.sockets.on('connection',function(socket){
                 // 여기에 방을 나갔다는 메세지를 broad cast 하기
                 if (nickname != undefined) {
                     delete rooms[room].nicknames[socket.id];
+                    // 여기 room에 연결된 사람이 없을 경우, 해당 room property를 삭제하는 부분 추가 필요
                     if(rooms[room].socket_ids != undefined
                         && rooms[room].socket_ids[nickname] != undefined )
                         delete rooms[room].socket_ids[nickname];
+
 
                 }// if
                 data = {msg : nickname +' 님이 나가셨습니다.'};
