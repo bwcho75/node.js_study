@@ -62,8 +62,7 @@ io.sockets.on('connection',function(socket){
 
             // broad cast join message
             data = {msg : nickname +' 님이 입장하셨습니다.'};
-            socket.broadcast.to(room).emit('broadcast_msg', data);
-            socket.emit('broadcast_msg',data);
+            io.sockets.in(room).emit('broadcast_msg',data);
 
             // broadcast changed user list in the room
             io.sockets.in(room).emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
