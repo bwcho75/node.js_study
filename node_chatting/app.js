@@ -66,9 +66,7 @@ io.sockets.on('connection',function(socket){
             socket.emit('broadcast_msg',data);
 
             // broadcast changed user list in the room
-            socket.broadcast.to(room).emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
-            socket.emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
-
+            io.sockets.in(room).emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
             count++;
         });
 
@@ -86,12 +84,10 @@ io.sockets.on('connection',function(socket){
             rooms[room].nicknames[socket.id] = nickname;
 
             data = {msg : previous_nickname +' 님이 '+nickname+'으로 대화명을 변경하셨습니다.'};
-            socket.broadcast.to(room).emit('broadcast_msg', data);
-            socket.emit('broadcast_msg',data);
+            io.sockets.in(room).emit('broadcast_msg', data);
 
             // send changed user nickname lists to clients
-            socket.broadcast.to(room).emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
-            socket.emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
+            io.sockets.in(room).emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
 
         });
     });
@@ -118,10 +114,9 @@ io.sockets.on('connection',function(socket){
 
                 }// if
                 data = {msg : nickname +' 님이 나가셨습니다.'};
-                socket.broadcast.to(room).emit('broadcast_msg', data);
-                socket.emit('broadcast_msg',data);
-                socket.broadcast.to(room).emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
-                socket.emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
+
+                io.sockets.in(room).emit('broadcast_msg',data);
+                io.sockets.in(room).emit('userlist',{users:Object.keys(rooms[room].socket_ids)});
             }
         }); //get
     });
@@ -140,7 +135,7 @@ io.sockets.on('connection',function(socket){
                     io.sockets.socket(socket_id).emit('broadcast_msg', data);
                 }// if
             }
-            socket.emit('broadcast_msg', data); // 해당 클라이언트에게만 보냄. 다른 클라이언트에 보낼려면?
+            socket.emit('broadcast_msg', data);
         });
     })
 });
