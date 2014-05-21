@@ -1,0 +1,15 @@
+{
+  "name": "chatting sample application with SockJS and PRIMUS",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.5.1",
+    "jade": "*",
+    "primus": "^2.2.1",
+    "socket.io": "^0.9.16",
+    "sockjs": "^0.3.8"
+  }
+}
