@@ -21,7 +21,6 @@
     <script type="text/javascript">
         var socket = io.connect('http://localhost');
         socket.emit('joinroom',{room:'<%=room%>'});
-
         $('#changename').click(function(){
             socket.emit('changename',{nickname:$('#nickname').val()});
         });

@@ -1,8 +1,4 @@
 
-/**
- * Module dependencies.
- */
-
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
@@ -11,7 +7,23 @@ var path = require('path');
 
 var mongoose = require('mongoose');
 
-var MemoSchema= mongoose.Schema({username:String,memo:String});
+// define validator
+function NameAlphabeticValidator(val){
+    return val.match("^[a-zA-Z\(\)]+$");
+}
+function MemoLengthValidator(val){
+    if(val.length>10) return null;
+    return val;
+}
+
+// schema definition with validation
+var MemoSchema= mongoose.Schema({
+    username:{type:String,validate:NameAlphabeticValidator}
+    ,memo:{type:String,validate:[
+        {validator:MemoLengthValidator,msg:'memo length should be less than 10'},
+        {validator:NameAlphabeticValidator,msg:'PATH `{PATH}` should be alphabet only. Current value is `{VALUE}` '}
+    ]}
+});
 var Memo = mongoose.model('MemoModel',MemoSchema); // MemoModel : mongodb collection name
 
 var app = express();
@@ -30,9 +42,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.post('/insert', function(req,res,err){
     var memo = new Memo({username:req.body.username,memo:req.body.memo});
     memo.save(function(err,silence){
-        if(err) return console.error(err);
+        if(err){
+            console.error(err);
+            res.send(500,'error');
+        }
+        res.send('success');
     });
-    res.send('success');
 });
 
 app.get('/users/:username', function(req,res,err){
@@ -64,6 +79,6 @@ mongoose.connect('mongodb://localhost/terrydb',function(err){
         throw err;
     }
     http.createServer(app).listen(app.get('port'), function(){
-      console.log('Express server listening on port ' + app.get('port'));
+        console.log('Express server listening on port ' + app.get('port'));
     });
 });
