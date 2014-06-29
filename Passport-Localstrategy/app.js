@@ -18,23 +18,27 @@ var flash = require('connect-flash') // session 관련해서 사용됨. 로그�
 // 인증 후, 사용자 정보를 Session에 저장함
 passport.serializeUser(function(user, done) {
     console.log('serialize');
-    done(null, user.username);
+    done(null, user);
 });
 
 // 인증 후, 페이지 접근시 마다 사용자 정보를 Session에서 읽어옴.
-passport.deserializeUser(function(id, done) {
+passport.deserializeUser(function(user, done) {
     //findById(id, function (err, user) {
     console.log('deserialize');
+    console.log(user);
     done(null, user);
     //});
 });
 
 
-passport.use(new LocalStrategy(
-    function(username, password, done) {
-        console.log('login handling');
-        if(username=='hello' && password=='world'){
-            var user = { 'username':'hello',
+passport.use(new LocalStrategy({
+        usernameField : 'userid',
+        passwordField : 'password',
+        passReqToCallback : true
+    }
+    ,function(req,userid, password, done) {
+        if(userid=='hello' && password=='world'){
+            var user = { 'userid':'hello',
                           'email':'hello@world.com'};
             return done(null,user);
         }else{
@@ -70,8 +74,8 @@ app.post('/login',
         res.redirect('/login_success');
     });
 
-app.get('/mypage', ensureAuthenticated, function(req, res){
-    res.send('hello');
+app.get('/login_success', ensureAuthenticated, function(req, res){
+    res.send(req.user);
    // res.render('users', { user: req.user });
 });
 
